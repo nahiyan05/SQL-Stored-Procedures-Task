@@ -28,8 +28,10 @@ SQLQuery6_Q6.sql  → Employee Login History
 SQLQuery7_Q7.sql  → Activity Dashboard
 
 ## How to Run
-1. Restore `Task.bak` in SQL Server
-2. Open scripts from the `/sql` folder
-3. Execute each script in SSMS
-4. Run the EXEC commands at the bottom of each file
 
+1. Open **SQL Server Management Studio (SSMS)**.
+2. Restore the provided database backup (`Task.bak`) and ensure the database name is **DCN-Miju**.
+3. Open any SQL script file (e.g., `SQLQuery1_Q1.sql`) in SSMS.
+4. Verify the database context at the top of the script:
+   ```sql
+   USE [DCN-Miju];
